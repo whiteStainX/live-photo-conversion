@@ -30,6 +30,23 @@ A Live Photo is a combination of a still image (`.HEIC`) and a short video (`.MO
 
 The conversion is handled by the `convert.sh` script in this repository. It automatically installs `ffmpeg` (a powerful video tool) if it's not already on your system.
 
-## Next Steps
+## Bonus: Convert Frames to ASCII Art
 
-Considering subsequnt processing (converting to ASCII, in a more subtle way) integration
+This project also includes a script to convert any image file (`.jpg`, `.png`) or folder of images into text-based ASCII art.
+
+### How to Use
+
+1.  **Install Dependencies:**
+    *   Before you begin, run the command: `./install_dependencies.sh`.
+    *   This will ensure `jp2a`, the image-to-ASCII converter, is installed.
+
+2.  **Configure (Optional):**
+    *   You can easily change the ASCII output by editing the `ascii.conf` file.
+    *   Adjust variables like `ASCII_WIDTH` and `ASCII_CHARS` to experiment with different styles.
+
+3.  **Run the ASCII Converter:**
+    *   Run the command: `./convert_to_ascii.sh`.
+    *   Drag and drop a folder of images (like the `..._frames` folder) or a single `.jpg`/`.png` file onto the Terminal window and press Enter.
+
+4.  **Done!**
+    *   A new folder named `..._ascii` will be created, containing a `.txt` file for each converted image.
