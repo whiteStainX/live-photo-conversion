@@ -50,3 +50,19 @@ This project also includes a script to convert any image file (`.jpg`, `.png`) o
 
 4.  **Done!**
     *   A new folder named `..._ascii` will be created, containing a `.txt` file for each converted image.
+
+## Final Step: Compile ASCII to Go
+
+Finally, you can compile your folder of ASCII `.txt` frames into a single Go file containing a `[]string` slice, perfect for animations in Go applications.
+
+### How to Use
+
+1.  **Run the Go Converter:**
+    *   Run the command: `./txt_to_go.sh`.
+
+2.  **Provide Input:**
+    *   Drag and drop the folder containing your `.txt` files (e.g., `..._ascii`) onto the Terminal and press Enter.
+    *   When prompted, enter a name for your Go variable (like `myAnimation`).
+
+3.  **Done!**
+    *   A new `my_animation_frames.go` file will be generated, containing all your frames neatly packed into a Go slice.
